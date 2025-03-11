@@ -6,17 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EF5DB6A52D803A000060E328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DB69F2D803A000060E328 /* Preview Assets.xcassets */; };
+		EF5DB6A62D803A000060E328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF5DB6A12D803A000060E328 /* Assets.xcassets */; };
+		EF5DB6A72D803A000060E328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DB6A22D803A000060E328 /* ContentView.swift */; };
+		EF5DB6A82D803A000060E328 /* MyCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DB6A32D803A000060E328 /* MyCollectionApp.swift */; };
+		EF5DB6AB2D803A300060E328 /* MyCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DB6AA2D803A300060E328 /* MyCollection.swift */; };
+		EF5DB6AD2D8044D20060E328 /* AddEditCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5DB6AC2D8044D20060E328 /* AddEditCollectionView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		EF5DB68E2D8039F50060E328 /* MyCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF5DB69F2D803A000060E328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EF5DB6A12D803A000060E328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF5DB6A22D803A000060E328 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EF5DB6A32D803A000060E328 /* MyCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionApp.swift; sourceTree = "<group>"; };
+		EF5DB6AA2D803A300060E328 /* MyCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollection.swift; sourceTree = "<group>"; };
+		EF5DB6AC2D8044D20060E328 /* AddEditCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditCollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		EF5DB6902D8039F50060E328 /* MyCollection */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = MyCollection;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EF5DB68B2D8039F50060E328 /* Frameworks */ = {
@@ -32,7 +39,7 @@
 		EF5DB6852D8039F50060E328 = {
 			isa = PBXGroup;
 			children = (
-				EF5DB6902D8039F50060E328 /* MyCollection */,
+				EF5DB6A42D803A000060E328 /* MyCollection */,
 				EF5DB68F2D8039F50060E328 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +50,35 @@
 				EF5DB68E2D8039F50060E328 /* MyCollection.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EF5DB6A02D803A000060E328 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DB69F2D803A000060E328 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF5DB6A42D803A000060E328 /* MyCollection */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DB6A92D803A1D0060E328 /* Model */,
+				EF5DB6A22D803A000060E328 /* ContentView.swift */,
+				EF5DB6AC2D8044D20060E328 /* AddEditCollectionView.swift */,
+				EF5DB6A32D803A000060E328 /* MyCollectionApp.swift */,
+				EF5DB6A12D803A000060E328 /* Assets.xcassets */,
+				EF5DB6A02D803A000060E328 /* Preview Content */,
+			);
+			path = MyCollection;
+			sourceTree = "<group>";
+		};
+		EF5DB6A92D803A1D0060E328 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EF5DB6AA2D803A300060E328 /* MyCollection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +95,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				EF5DB6902D8039F50060E328 /* MyCollection */,
 			);
 			name = MyCollection;
 			packageProductDependencies = (
@@ -109,6 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DB6A52D803A000060E328 /* Preview Assets.xcassets in Resources */,
+				EF5DB6A62D803A000060E328 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF5DB6AD2D8044D20060E328 /* AddEditCollectionView.swift in Sources */,
+				EF5DB6A72D803A000060E328 /* ContentView.swift in Sources */,
+				EF5DB6AB2D803A300060E328 /* MyCollection.swift in Sources */,
+				EF5DB6A82D803A000060E328 /* MyCollectionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

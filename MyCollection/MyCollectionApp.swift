@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct MyCollectionApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: MyCollection.self)
         }
     }
 }
