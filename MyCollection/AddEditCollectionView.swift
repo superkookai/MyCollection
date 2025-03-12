@@ -41,6 +41,10 @@ struct AddEditCollectionView: View {
         dismiss()
     }
     
+    private var isFormValid: Bool {
+        !name.isEmpty
+    }
+    
     var body: some View {
         VStack {
             HStack {
@@ -63,6 +67,8 @@ struct AddEditCollectionView: View {
             .padding(.top)
             
             TextField("Collection Name", text: $name)
+                .autocorrectionDisabled()
+                .textInputAutocapitalization(.sentences)
                 .font(.title)
                 .padding()
                 .background(.ultraThinMaterial)
@@ -107,10 +113,11 @@ struct AddEditCollectionView: View {
                     .fontWeight(.semibold)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(.green)
+                    .background(isFormValid ? .green : .gray.opacity(0.5))
                     .clipShape(.rect(cornerRadius: 10))
                     .padding(.horizontal)
             }
+            .disabled(!isFormValid)
             
             Spacer()
         }

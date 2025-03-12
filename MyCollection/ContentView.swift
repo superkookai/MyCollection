@@ -23,7 +23,7 @@ enum SheetAction: Identifiable {
 }
 
 struct Constants {
-    static let screenWidth = (UIScreen.main.bounds.width / 2) - 30
+    static let screenWidth = (UIScreen.main.bounds.width / 2) - 20
 }
 
 struct ContentView: View {
@@ -99,7 +99,7 @@ struct CollectionView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: Constants.screenWidth, height: 200)
-                    .clipShape(.rect(cornerRadius: 10))
+                    .clipped()
                     
             } else {
                 VStack {
